@@ -1,0 +1,81 @@
+body {
+  background-image: url('../img/background1.jpg');
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+}
+
+#gemMine {
+
+  cursor: pointer;
+}
+#gemMine {
+  width: 150px; /* Adjust the size of the gem mine */
+  height: 150px;
+}
+
+
+#gemCount {
+  font-size: 30px;
+  color: white;
+  margin-top: 100px;
+}
+
+#gemCount img{
+  height: 23px;
+  width: auto;
+  margin-left: 20px;
+  
+}
+
+#gemCountValue {
+  display: inline-block;
+  margin-left: 10px; /* Add a small margin between the gem icon and count */
+}
+
+#upgrade{
+width: 150px;
+margin-right: -40px;
+padding: 10px;
+background-color: rgba(87, 253, 87, 0.852);
+}
+
+#upgrade:hover{
+  background-color: rgba(87, 253, 87, 0.372);
+}
+
+#upgrade img{
+  height: 20px;
+  width: auto;
+  margin-bottom: -5px;
+}
+
+
+#autoClicker{
+  width: 150px;
+margin-right: -40px;
+padding: 10px;
+background-color: rgba(87, 253, 87, 0.852);
+}
+
+#autoClicker:hover{
+  background-color: rgba(87, 253, 87, 0.372);
+  
+}
+
+#autoClicker img{
+  height: 20px;
+  width: auto;
+  margin-bottom: -5px;
+}
+
+
+
