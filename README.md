@@ -1,2 +1,2 @@
 # gemclicker
-[PLAY]{()
+[PLAY]('https://github.com/EminPetlaca/gemclicker.git')
