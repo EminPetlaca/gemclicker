@@ -1,2 +1,2 @@
 # gemclicker
-[PLAY](
+[PLAY](https://eminpetlaca.github.io/gemclicker/)
