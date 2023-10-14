@@ -14,6 +14,8 @@ let autoClickInterval;
 let autoClickerCost = 500;
 let gemLevel = 1;
 
+
+
 gemMine.onclick = () => {
   console.log("click");
   numberOfGems += clickUpgradeIncrease;
@@ -27,7 +29,7 @@ const clickUpgradeFunction = () => {
     clickUpgradeIncrease++;
 
     costOfClickUpgrade += 10;
-    upgrade.innerHTML = `Upgrade gem mine: ${costOfClickUpgrade} <img src="${gemIcon.src}" alt="Gem Icon">`; 
+    upgrade.innerHTML = `Upgrade gem mine: ${costOfClickUpgrade} <img src="${gemIcon.src}" alt="Gem Icon">`;
     gemLevel += 1;
     if (gemLevel == 4) {
       gemMineIcon.src = 'res/img/Gem_Mine2.png';
@@ -50,8 +52,42 @@ const clickUpgradeFunction = () => {
     }
 
   }
+
+  const upgradeSound = document.getElementById("upgradeSound");
+  upgradeSound.play();
 };
 
+
+//background sound
+
+const backgroundMusic = document.getElementById('backgroundMusic');
+const muteButton = document.getElementById('muteButton');
+const muteIcon = document.getElementById('muteIcon');
+
+function toggleMute() {
+  if (backgroundMusic.paused) {
+    backgroundMusic.play();
+  } else {
+    backgroundMusic.pause();
+  }
+  updateMuteIcon();
+}
+
+
+function updateMuteIcon() {
+  if (backgroundMusic.paused) {
+    muteIcon.classList.remove('fa-volume-up');
+    muteIcon.classList.add('fa-volume-mute');
+    muteButton.innerHTML = 'Sound on';
+  } else {
+    muteIcon.classList.remove('fa-volume-mute');
+    muteIcon.classList.add('fa-volume-up');
+    muteButton.innerHTML = 'Sound off';
+  }
+}
+
+
+updateMuteIcon();
 
 
 clickUpgrade.onclick = clickUpgradeFunction;
@@ -74,6 +110,29 @@ autoClickerButton.onclick = () => {
   }
 };
 
+const productionBoost = document.getElementById("productionBoost");
+let productionBoostCost = 10000; 
+let productionBoostIncrease = 1; 
+
+productionBoost.onclick = () => {
+  if (numberOfGems >= productionBoostCost) {
+    numberOfGems -= productionBoostCost;
+    productionBoostCost += 5000; 
+    productionBoost.innerHTML = `Buy production boost: <br> ${productionBoostCost} <img id="gemicon" src="./res/img/gem.webp" alt="Gem Icon"> <br> (autominer required)`;
+
+    
+
+
+    gems.innerHTML = `<img src="${gemIcon.src}" alt="Gem Icon"> ${numberOfGems}`;
+
+   
+    clearInterval(autoClickInterval);
+    autoClickInterval = setInterval(() => {
+      numberOfGems += autoClickIncrease;
+      gems.innerHTML = `<img src="${gemIcon.src}" alt="Gem Icon"> ${numberOfGems}`;
+    }, 700);
+  }
+};
 
 
 
@@ -81,6 +140,8 @@ autoClickerButton.onclick = () => {
 
 
 
+
+//cheats
 
 function cheats() {
   console.log("Cheats on!");

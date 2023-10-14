@@ -11,6 +11,14 @@ body {
 
 .container {
   text-align: center;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+  
 }
 
 #gemMine {
@@ -20,6 +28,7 @@ body {
 #gemMine {
   width: 150px; /* Adjust the size of the gem mine */
   height: 150px;
+  margin-left: -35px;
 }
 
 
@@ -27,12 +36,13 @@ body {
   font-size: 30px;
   color: white;
   margin-top: 100px;
+  margin-left: -5px;
 }
 
 #gemCount img{
   height: 23px;
   width: auto;
-  margin-left: 20px;
+
   
 }
 
@@ -43,7 +53,6 @@ body {
 
 #upgrade{
 width: 150px;
-margin-right: -40px;
 padding: 10px;
 background-color: rgba(87, 253, 87, 0.852);
 }
@@ -61,7 +70,7 @@ background-color: rgba(87, 253, 87, 0.852);
 
 #autoClicker{
   width: 150px;
-margin-right: -40px;
+
 padding: 10px;
 background-color: rgba(87, 253, 87, 0.852);
 }
@@ -76,6 +85,48 @@ background-color: rgba(87, 253, 87, 0.852);
   width: auto;
   margin-bottom: -5px;
 }
+
+/*boost*/
+
+#productionBoost{
+width: 150px;
+
+padding: 10px;
+background-color: rgba(87, 253, 87, 0.852);
+}
+
+#productionBoost:hover{
+  background-color: rgba(87, 253, 87, 0.372);
+}
+
+#productionBoost img{
+  height: 20px;
+  width: auto;
+  margin-bottom: -5px;
+
+}
+
+#muteButton {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: #333; 
+  transition: color 0.3s;
+}
+
+#muteButton:hover {
+  color: #666; 
+}
+
+
+
+
+
+
 
 
 

@@ -1,5 +1,6 @@
 <!DOCTYPE html5>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,27 +8,40 @@
   <link rel="stylesheet" href="./res/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
+
 <body>
+  <audio id="upgradeSound" src="res\sounds\Voicy_Building finished - Clash of Clans.mp3"></audio>
+  <audio id="backgroundMusic" autoplay loop>
+    <source src="res\sounds\04. Home Music Part 1.mp3" type="audio/mp3">
+  </audio>
+
+  <button id="muteButton" onclick="toggleMute()">
+    <i id="muteIcon" class="fas fa-volume-up"></i> Mute
+  </button>
+
+  <div class="container">
+    <div id="gemMine">
+      <img src="./res/img/Gem_Mine1.png" alt="Gem Mine" id="gemMineIcon">
+    </div>
+    <p id="gemCount"><img id="gemicon" src="./res/img/gem.webp" alt="Gem Icon"> <span id="gemCountValue">0</span></p>
+
+    <div>
+      <button id="upgrade">Upgrade gem mine: 50 <img id="gemicon" src="./res/img/gem.webp" alt="Gem Icon"> </button>
 
 
-<div class="container">
-  <div id="gemMine">
-    <img src="./res/img/Gem_Mine1.png" alt="Gem Mine" id="gemMineIcon">
+    </div>
+    <div>
+      <button id="autoClicker">Buy an autominer: 500 <img id="gemicon" src="./res/img/gem.webp" alt="Gem Icon"></button>
+    </div>
+
+    <div>
+      <button id="productionBoost">Buy producution boost: <br> 10000 <img id="gemicon" src="./res/img/gem.webp" alt="Gem Icon"> <br> (autominer requried)</button>
+    </div>
   </div>
-  <p id="gemCount"><img id="gemicon" src="./res/img/gem.webp" alt="Gem Icon"> <span id="gemCountValue">0</span></p>
 
-  <div>
-    <button id="upgrade">Upgrade gem mine: 50 <img id="gemicon" src="./res/img/gem.webp" alt="Gem Icon"> </button>
 
-   
-  </div>
-  <div>
-    <button id="autoClicker">Buy an autominer: 500 <img id="gemicon" src="./res/img/gem.webp" alt="Gem Icon"></button>
-  </div>
-</div>
-
-<p>Test</p>
 
   <script src="./res/js/main.js"></script>
 </body>
+
 </html>
