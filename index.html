@@ -10,14 +10,34 @@
 </head>
 
 <body>
+
+  <!--audio-->
   <audio id="upgradeSound" src="res\sounds\Voicy_Building finished - Clash of Clans.mp3"></audio>
   <audio id="backgroundMusic" autoplay loop>
     <source src="res\sounds\04. Home Music Part 1.mp3" type="audio/mp3">
   </audio>
 
   <button id="muteButton" onclick="toggleMute()">
-    <i id="muteIcon" class="fas fa-volume-up"></i> Mute
+    <img id="muteIcon" src="res\img\Mute_Icon.svg.png" alt="Sound On">
   </button>
+
+  <!--achivements-->
+  <button id="achievementsButton" onclick="showAchievements()">
+    <img id="achievementsIcon" src="res\img\leaderboard-trophy-icon-32.png" alt="Achievements">
+  </button>
+
+  <div id="achievementsSection">
+    <div id="achievementsList">
+      <ul>
+        <li>achivment 1</li>
+        <li>achivment 2</li>
+        <li>achivment 3</li>
+        <li>achivment 3</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="popUpContainer"></div>
 
   <div class="container">
     <div id="gemMine">
@@ -35,7 +55,8 @@
     </div>
 
     <div>
-      <button id="productionBoost">Buy producution boost: <br> 10000 <img id="gemicon" src="./res/img/gem.webp" alt="Gem Icon"> <br> (autominer requried)</button>
+      <button id="productionBoost">Buy producution boost: <br> 10000 <img id="gemicon" src="./res/img/gem.webp"
+          alt="Gem Icon"> <br> (autominer requried)</button>
     </div>
   </div>
 

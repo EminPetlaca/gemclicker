@@ -31,23 +31,23 @@ const clickUpgradeFunction = () => {
     costOfClickUpgrade += 10;
     upgrade.innerHTML = `Upgrade gem mine: ${costOfClickUpgrade} <img src="${gemIcon.src}" alt="Gem Icon">`;
     gemLevel += 1;
-    if (gemLevel == 4) {
+    if (gemLevel == 2) {
       gemMineIcon.src = 'res/img/Gem_Mine2.png';
     }
 
-    if (gemLevel == 8) {
+    if (gemLevel == 3) {
       gemMineIcon.src = 'res/img/Gem_Mine3.png';
     }
 
-    if (gemLevel == 16) {
+    if (gemLevel == 4) {
       gemMineIcon.src = 'res/img/Gem_Mine4.png';
     }
 
-    if (gemLevel == 32) {
+    if (gemLevel == 5) {
       gemMineIcon.src = 'res/img/Gem_Mine5.webp';
     }
 
-    if (gemLevel == 64) {
+    if (gemLevel == 6) {
       gemMineIcon.src = 'res/img/Gem_Mine6.webp';
     }
 
@@ -73,19 +73,13 @@ function toggleMute() {
   updateMuteIcon();
 }
 
-
 function updateMuteIcon() {
-  if (backgroundMusic.paused) {
-    muteIcon.classList.remove('fa-volume-up');
-    muteIcon.classList.add('fa-volume-mute');
-    muteButton.innerHTML = 'Sound on';
+  if (backgroundMusic.paused) { 
+    muteIcon.src = 'res/img/Mute_Icon.svg.png';
   } else {
-    muteIcon.classList.remove('fa-volume-mute');
-    muteIcon.classList.add('fa-volume-up');
-    muteButton.innerHTML = 'Sound off';
+    muteIcon.src = 'res/img/Speaker_Icon.svg.png';
   }
 }
-
 
 updateMuteIcon();
 
@@ -111,21 +105,21 @@ autoClickerButton.onclick = () => {
 };
 
 const productionBoost = document.getElementById("productionBoost");
-let productionBoostCost = 10000; 
-let productionBoostIncrease = 1; 
+let productionBoostCost = 10000;
+let productionBoostIncrease = 1;
 
 productionBoost.onclick = () => {
   if (numberOfGems >= productionBoostCost) {
     numberOfGems -= productionBoostCost;
-    productionBoostCost += 5000; 
+    productionBoostCost += 5000;
     productionBoost.innerHTML = `Buy production boost: <br> ${productionBoostCost} <img id="gemicon" src="./res/img/gem.webp" alt="Gem Icon"> <br> (autominer required)`;
 
-    
+
 
 
     gems.innerHTML = `<img src="${gemIcon.src}" alt="Gem Icon"> ${numberOfGems}`;
 
-   
+
     clearInterval(autoClickInterval);
     autoClickInterval = setInterval(() => {
       numberOfGems += autoClickIncrease;
@@ -134,9 +128,60 @@ productionBoost.onclick = () => {
   }
 };
 
+//achivments
+const achievementsButton = document.getElementById('achievementsButton');
+const achievementsIcon = document.getElementById('achievementsIcon');
+const achievementsSection = document.getElementById('achievementsSection');
+const achievementsList = document.getElementById('achievementsList');
+const popUpContainer = document.getElementById('popUpContainer');
+
+achievementsButton.onclick = () => {
+  achievementsSection.style.display = (achievementsSection.style.display === 'none' || !achievementsSection.style.display) ? 'block' : 'none';
+};
+
+function showPopUpMessage(message) {
+  popUpContainer.textContent = message;
+  popUpContainer.style.display = 'block';
+  setTimeout(() => {
+    popUpContainer.style.display = 'none';
+  }, 2000);
+}
+
+let has10kAchievement = false;
+let has20kAchievement = false;
+
+function checkAchievements() {
+  if (numberOfGems >= 10000 && !has10kAchievement) {
+    unlockAchievement('Reached 10,000 Gems!');
+    has10kAchievement = true;
+
+    showPopUpMessage('Congratulations! Just Starting!');
+
+    achievementsList.innerHTML += '<li>Reached 10,000 Gems</li>';
+  }
+
+  if (numberOfGems >= 20000 && !has20kAchievement) {
+    unlockAchievement('Reached 20,000 Gems!');
+    has20kAchievement = true;
+
+    showPopUpMessage('Wow! 20,000 Gems!');
+
+    achievementsList.innerHTML += '<li>Reached 20,000 Gems</li>';
+  }
+}
+
+
+gemMine.onclick = () => {
+  numberOfGems += clickUpgradeIncrease;
+  gems.innerHTML = `<img src="${gemIcon.src}" alt="Gem Icon"> ${numberOfGems}`;
+  checkAchievements();
+};
 
 
 
+
+
+checkAchievements();
 
 
 
