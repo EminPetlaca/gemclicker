@@ -31,23 +31,23 @@ const clickUpgradeFunction = () => {
     costOfClickUpgrade += 10;
     upgrade.innerHTML = `Upgrade gem mine: ${costOfClickUpgrade} <img src="${gemIcon.src}" alt="Gem Icon">`;
     gemLevel += 1;
-    if (gemLevel == 4) {
+    if (gemLevel == 2) {
       gemMineIcon.src = 'res/img/Gem_Mine2.png';
     }
 
-    if (gemLevel == 8) {
+    if (gemLevel == 3) {
       gemMineIcon.src = 'res/img/Gem_Mine3.png';
     }
 
-    if (gemLevel == 16) {
+    if (gemLevel == 4) {
       gemMineIcon.src = 'res/img/Gem_Mine4.png';
     }
 
-    if (gemLevel == 32) {
+    if (gemLevel == 5) {
       gemMineIcon.src = 'res/img/Gem_Mine5.webp';
     }
 
-    if (gemLevel == 64) {
+    if (gemLevel == 6) {
       gemMineIcon.src = 'res/img/Gem_Mine6.webp';
     }
 
