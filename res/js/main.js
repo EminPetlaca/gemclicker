@@ -183,6 +183,17 @@ gemMine.onclick = () => {
 
 checkAchievements();
 
+//shop
+function toggleShop() {
+  var shopContainer = document.getElementById('shopContainer');
+  shopContainer.style.display = (shopContainer.style.display === 'none' || shopContainer.style.display === '') ? 'flex' : 'none';
+}
+
+const shopCard = document.getElementById("shopIcon");
+
+shopCard.onclick = () => {
+  toggleShop();
+};
 
 
 
