@@ -11,22 +11,24 @@ body {
 
 .container {
   text-align: center;
-   
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    text-align: center;
-  
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+
 }
 
 #gemMine {
 
   cursor: pointer;
 }
+
 #gemMine {
-  width: 150px; /* Adjust the size of the gem mine */
+  width: 150px;
+  /* Adjust the size of the gem mine */
   height: 150px;
   margin-left: -35px;
 }
@@ -39,48 +41,49 @@ body {
   margin-left: -5px;
 }
 
-#gemCount img{
+#gemCount img {
   height: 23px;
   width: auto;
 
-  
+
 }
 
 #gemCountValue {
   display: inline-block;
-  margin-left: 10px; /* Add a small margin between the gem icon and count */
+  margin-left: 10px;
+  /* Add a small margin between the gem icon and count */
 }
 
-#upgrade{
-width: 150px;
-padding: 10px;
-background-color: rgba(87, 253, 87, 0.852);
+#upgrade {
+  width: 150px;
+  padding: 10px;
+  background-color: rgba(87, 253, 87, 0.852);
 }
 
-#upgrade:hover{
+#upgrade:hover {
   background-color: rgba(87, 253, 87, 0.372);
 }
 
-#upgrade img{
+#upgrade img {
   height: 20px;
   width: auto;
   margin-bottom: -5px;
 }
 
 
-#autoClicker{
+#autoClicker {
   width: 150px;
 
-padding: 10px;
-background-color: rgba(87, 253, 87, 0.852);
+  padding: 10px;
+  background-color: rgba(87, 253, 87, 0.852);
 }
 
-#autoClicker:hover{
+#autoClicker:hover {
   background-color: rgba(87, 253, 87, 0.372);
-  
+
 }
 
-#autoClicker img{
+#autoClicker img {
   height: 20px;
   width: auto;
   margin-bottom: -5px;
@@ -88,18 +91,18 @@ background-color: rgba(87, 253, 87, 0.852);
 
 /*boost*/
 
-#productionBoost{
-width: 150px;
+#productionBoost {
+  width: 150px;
 
-padding: 10px;
-background-color: rgba(87, 253, 87, 0.852);
+  padding: 10px;
+  background-color: rgba(87, 253, 87, 0.852);
 }
 
-#productionBoost:hover{
+#productionBoost:hover {
   background-color: rgba(87, 253, 87, 0.372);
 }
 
-#productionBoost img{
+#productionBoost img {
   height: 20px;
   width: auto;
   margin-bottom: -5px;
@@ -113,15 +116,16 @@ background-color: rgba(87, 253, 87, 0.852);
   background: none;
   border: none;
   cursor: pointer;
+  z-index: 1000;
 }
 
 #muteIcon {
-  width: 24px; 
+  width: 30px;
   height: auto;
 }
 
 #muteButton:hover #muteIcon {
-  filter: brightness(80%); 
+  filter: brightness(80%);
 }
 
 /*achivments*/
@@ -132,23 +136,26 @@ background-color: rgba(87, 253, 87, 0.852);
   background: none;
   border: none;
   cursor: pointer;
-  z-index: 1000; /* Ensure the icon is above other elements */
+  z-index: 1000;
   margin-right: 35px;
 }
 
 #achievementsIcon {
-  width: 24px; /* Adjust the width as needed */
+  width: 30px;
+  /* Adjust the width as needed */
   height: auto;
 }
 
 #achievementsButton:hover #achievementsIcon {
-  filter: brightness(80%); /* Adjust the hover effect as needed */
+  filter: brightness(80%);
+  /* Adjust the hover effect as needed */
 }
 
 #achievementsSection {
   position: fixed;
   top: 10px;
-  right: 50px; /* Adjust the right position as needed */
+  right: 50px;
+  /* Adjust the right position as needed */
   background: rgba(255, 255, 255, 0.9);
   padding: 20px;
   border-radius: 10px;
@@ -183,10 +190,39 @@ background-color: rgba(87, 253, 87, 0.852);
   z-index: 1000;
 }
 
+/*shop*/
+
+#shopIcon {
+  height: 30px;
+  width: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 10px;
+  z-index: 1000;
+}
+
+
+#shopContainer {
+  height: 100vh;
+  width: 100vw;
+  background-color: #5a5e5de6;
+  position: fixed;
+  border-radius: 10px;
+  margin: 20px;
+  text-align: center;
+  display: none;
+}
+
+#Shopwindow {
+  height: 550px;
+  width: 900px;
+  background-color: #4146449a;
+  position: absolute;
+  left: 16%;
 
 
 
-
-
-
-
+  margin: 20px;
+  text-align: center;
+}
