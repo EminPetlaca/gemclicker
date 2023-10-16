@@ -196,6 +196,137 @@ shopCard.onclick = () => {
 };
 
 
+//potions *pain*
+
+const buyButton0 = document.getElementById("buyButton");
+const buyButton1 = document.getElementById("buyButton1");
+const buyButton2 = document.getElementById("buyButton2");
+const buyButton3= document.getElementById("buyButton3");
+const buyButton4 = document.getElementById("buyButton4");
+const buyButton5 = document.getElementById("buyButton5");
+
+const potionIcon0 = document.getElementById("potion0");
+const potionIcon1 = document.getElementById("potion1");
+const potionIcon2 = document.getElementById("potion2");
+const potionIcon3 = document.getElementById("potion3");
+const potionIcon4 = document.getElementById("potion4");
+const potionIcon5 = document.getElementById("potion5");
+
+
+
+let = costOfPotion0 = 500;
+let = costOfPotion1 = 1000;
+let = costOfPotion2 = 5000;
+let = costOfPotion3 = 750;
+let = costOfPotion4 = 200;
+let = costOfPotion5 = 40000;
+
+let = numberOfPotion0 = 0;
+let = numberOfPotion1 = 0;
+let = numberOfPotion2 = 0;
+let = numberOfPotion3 = 0;
+let = numberOfPotion4 = 0;
+let = numberOfPotion5 = 0;
+
+buyButton0.onclick = () => {
+if(numberOfGems >= costOfPotion0){
+  console.log("click");
+  numberOfGems = numberOfGems - costOfPotion0;
+  numberOfPotion0 ++;
+  gems.innerHTML = `<img src="${gemIcon.src}" alt="Gem Icon"> ${numberOfGems}`;
+  potions.innerHTML = `<img src="${potionIcon0.src}" alt="Gem Icon"> : ${numberOfPotion0}`;
+} }
+
+buyButton1.onclick = () => {
+  if(numberOfGems >= costOfPotion1){
+  console.log("click");
+  numberOfGems = numberOfGems - costOfPotion1;
+  numberOfPotion1 ++;
+  gems.innerHTML = `<img src="${gemIcon.src}" alt="Gem Icon"> ${numberOfGems}`;
+  potions1.innerHTML = `<img src="${potionIcon1.src}" alt="Gem Icon"> : ${numberOfPotion1}`;
+}
+} 
+
+buyButton2.onclick = () => {
+  if(numberOfGems >= costOfPotion2){
+  console.log("click");
+  numberOfGems = numberOfGems - costOfPotion2;
+  numberOfPotion2 ++;
+  gems.innerHTML = `<img src="${gemIcon.src}" alt="Gem Icon"> ${numberOfGems}`;
+  potions2.innerHTML = `<img src="${potionIcon2.src}" alt="Gem Icon"> : ${numberOfPotion2}`;
+  }
+};
+
+buyButton3.onclick = () => {
+  if(numberOfGems >= costOfPotion3){
+  console.log("click");
+  numberOfGems = numberOfGems - costOfPotion3;
+  numberOfPotion3 ++;
+  gems.innerHTML = `<img src="${gemIcon.src}" alt="Gem Icon"> ${numberOfGems}`;
+  potions3.innerHTML = `<img src="${potionIcon3.src}" alt="Gem Icon"> : ${numberOfPotion3}`;
+}
+};
+
+buyButton4.onclick = () => {
+  if(numberOfGems >= costOfPotion4){
+  console.log("click");
+  numberOfGems = numberOfGems - costOfPotion4;
+  numberOfPotion4 ++;
+  gems.innerHTML = `<img src="${gemIcon.src}" alt="Gem Icon"> ${numberOfGems}`;
+  potions4.innerHTML = `<img src="${potionIcon4.src}" alt="Gem Icon"> : ${numberOfPotion4}`;
+}
+};
+
+buyButton5.onclick = () => {
+  if(numberOfGems >= costOfPotion5){
+  console.log("click");
+  numberOfGems = numberOfGems - costOfPotion5;
+  numberOfPotion5 ++;
+  gems.innerHTML = `<img src="${gemIcon.src}" alt="Gem Icon"> ${numberOfGems}`;
+  potions5.innerHTML = `<img src="${potionIcon2.src}" alt="Gem Icon"> : ${numberOfPotion5}`;
+}
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //cheats
 

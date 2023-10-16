@@ -146,7 +146,7 @@ body {
 }
 
 #achievementsButton:hover #achievementsIcon {
-  filter: brightness(80%); 
+  filter: brightness(80%);
 }
 
 #achievementsSection {
@@ -204,58 +204,61 @@ body {
   height: 100vh;
   width: 100vw;
   background-color: #454747e6;
-  position: fixed; 
+  position: fixed;
   margin: 20px;
   text-align: center;
   display: none;
-  
+
 }
 
 #Shopwindow {
-  height: 650px;
-  width: 80%; /* Adjust as needed */
+  height: 700px;
+  width: 80%;
+  /* Adjust as needed */
   max-width: 900px;
   background-color: #080808a4;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  margin: 20px;
+  margin: 10px;
   text-align: center;
   border-radius: 10px;
   display: flex;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   gap: 25px;
   justify-content: center;
+  transition: all ease 1s;
 }
 
 #shopcard {
-  flex: 0 0 30%; 
-  height: 250px;
+  flex: 0 0 30%;
+  height: 290px;
   background-color: rgb(169, 145, 117);
   margin-top: 25px;
+  border-radius: 5px;
 }
 
-#shopItem{
+#shopItem {
   height: 150px;
   width: auto;
   margin-top: 10px;
 }
 
 
-#buyButton{
+#buyButton {
   padding: 10px;
   background-color: rgba(87, 253, 87, 0.852);
   border-radius: 5px;
   border-color: white;
 }
 
-#buyButton:hover{
+#buyButton:hover {
   background-color: rgba(87, 253, 87, 0.372);
   border-color: black;
-  
+
 }
 
-#buy-button-container{
+#buy-button-container {
   margin-top: 40px;
 }
 
@@ -265,3 +268,159 @@ body {
   margin-bottom: -5px;
 }
 
+#buyButton1 {
+  padding: 10px;
+  background-color: rgba(87, 253, 87, 0.852);
+  border-radius: 5px;
+  border-color: white;
+}
+
+#buyButton1:hover {
+  background-color: rgba(87, 253, 87, 0.372);
+  border-color: black;
+
+}
+
+#buyButton1 img {
+  height: 20px;
+  width: auto;
+  margin-bottom: -5px;
+}
+
+#buyButton2 {
+  padding: 10px;
+  background-color: rgba(87, 253, 87, 0.852);
+  border-radius: 5px;
+  border-color: white;
+}
+
+#buyButton2:hover {
+  background-color: rgba(87, 253, 87, 0.372);
+  border-color: black;
+
+}
+
+#buyButton2 img {
+  height: 20px;
+  width: auto;
+  margin-bottom: -5px;
+}
+
+#buyButton3 {
+  padding: 10px;
+  background-color: rgba(87, 253, 87, 0.852);
+  border-radius: 5px;
+  border-color: white;
+}
+
+#buyButton3:hover {
+  background-color: rgba(87, 253, 87, 0.372);
+  border-color: black;
+
+}
+
+#buyButton3 img {
+  height: 20px;
+  width: auto;
+  margin-bottom: -5px;
+}
+
+#buyButton4 {
+  padding: 10px;
+  background-color: rgba(87, 253, 87, 0.852);
+  border-radius: 5px;
+  border-color: white;
+}
+
+#buyButton4:hover {
+  background-color: rgba(87, 253, 87, 0.372);
+  border-color: black;
+
+}
+
+#buyButton4 img {
+  height: 20px;
+  width: auto;
+  margin-bottom: -5px;
+}
+
+#buyButton5 {
+  padding: 10px;
+  background-color: rgba(87, 253, 87, 0.852);
+  border-radius: 5px;
+  border-color: white;
+}
+
+#buyButton5:hover {
+  background-color: rgba(87, 253, 87, 0.372);
+  border-color: black;
+
+}
+
+#buyButton5 img {
+  height: 20px;
+  width: auto;
+  margin-bottom: -5px;
+}
+
+
+
+#potions {
+  margin-top: 12px;
+}
+
+#potions img {
+  height: 18px;
+  width: auto;
+  margin-bottom: -3.5px;
+}
+
+#potions1 {
+  margin-top: 12px;
+}
+
+#potions1 img {
+  height: 18px;
+  width: auto;
+  margin-bottom: -3.5px;
+}
+
+#potions2 {
+  margin-top: 12px;
+}
+
+#potions2 img {
+  height: 18px;
+  width: auto;
+  margin-bottom: -3.5px;
+}
+
+#potions3 {
+  margin-top: 12px;
+}
+
+#potions3 img {
+  height: 18px;
+  width: auto;
+  margin-bottom: -3.5px;
+}
+
+#potions4 {
+  margin-top: 12px;
+}
+
+#potions4 img {
+  height: 18px;
+  width: auto;
+  margin-bottom: -3.5px;
+}
+
+#potions5 {
+  margin-top: 12px;
+}
+
+#potions5 img {
+  height: 18px;
+  width: auto;
+  margin-bottom: -3.5px;
+}
